@@ -7,7 +7,17 @@
 
 import character
 import navigation
+import logging
 
+character.Character.knife = "false"
+character.Character.key = "false"
+
+# setting logging level
+logging.basicConfig(level=logging.DEBUG)
+logger = logging.getLogger(__name__)
+
+
+logger.info('Entering the dungeon')
 
 navigation.entrance()
 
